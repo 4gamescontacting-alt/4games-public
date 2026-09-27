@@ -95,11 +95,10 @@
 
 </style>
 <script>
-  window.addEventListener('DOMContentLoaded', function () {
-    confirm("Welcome to 4Games | Join the discord for more links: https://discord.gg/8h3Q6yYQAc");
-  });
-</script>
-</head>
+window.onload = function () {
+  confirm("Welcome to 4G*mes | Join the discord for more links: https://discord.gg/8h3Q6yYQAc");
+};
+</script></head>
 <body>
 
 
@@ -108,7 +107,7 @@
   <div style="display: flex; align-items: center; gap: 20px;">
     <h1 style="margin: 0; font-size: 24px;">
       
-    4Games       <a href="https://discord.gg/ujMnFfP9Jr" class="card">  Discord Server</a><a href="404.html" class="card">  More Links</a><a href="404.html" class="card">Comments</a><a href="https://mortuary-decal-everyone.ngrok-free.dev/" class="card">GimBot</a></h1>
+    4Games       <a href="https://discord.gg/ujMnFfP9Jr" class="card">  Discord Server</a><a href="404.html" class="card">  More Links</a><a href="404.html" class="card">Comments</a><a href="404.html" class="card">VM</a></h1>
     
 <input type="text" id="searchInput" placeholder="Search games..." style="margin-left: 20px; padding: 5px 10px; font-size: 14px; border-radius: 8px; border: none; background: #2a2a2a; color: white;">
 
@@ -489,7 +488,7 @@ window.onload = function() {
   var allCards = [];
   var currentShown = 0;
 
-  fetch('/games/list')
+  fetch('https://cdn.jsdelivr.net/gh/4gamescontacting-alt/4games-public@main/games.json')
     .then(function(r) { return r.json(); })
     .then(function(games) {
       games.sort(function(a, b) { return a.title.localeCompare(b.title); });
