@@ -1,0 +1,530 @@
+<!-- https://discord.gg/ujMnFfP9Jr -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="shortcut icon" href="/static/favicon.ico">
+
+  
+  <title>4Games</title>  
+  
+<meta name="description" content="Play unbl*cked games on 4G*mes. Play g*mes such as Angry Birds, Bullet Force, GTA, COD Webports, and more.">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+	
+
+
+
+
+<style>
+  :root {
+    --bg-color: #000000;       
+    --card-bg: #1C2526;        
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;
+    --accent-glow: linear-gradient(135deg, #ff416c, #4facfe); /* Red to Blue */
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  
+  .game-container {
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  
+  .card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  
+  .card:hover, .card:focus {
+    transform: translateY(-8px);
+    background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, 
+                var(--accent-glow) border-box; 
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(255, 65, 108, 0.4), 
+                0 0 30px rgba(79, 172, 254, 0.3);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .game-container { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .game-container { grid-template-columns: repeat(1, 1fr); }
+  }
+
+  img { display: none !important; }
+
+
+  .game-title {
+    display: block;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+  }
+
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    confirm("Welcome to 4Games | Join the discord for more links: https://discord.gg/8h3Q6yYQAc");
+  });
+</script>
+</head>
+<body>
+
+
+
+<header style="display: flex;justify-content: space-between;align-items: center;background: #000000;padding: 15px 30px;color: white;">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <h1 style="margin: 0; font-size: 24px;">
+      
+    4Games       <a href="https://discord.gg/ujMnFfP9Jr" class="card">  Discord Server</a><a href="404.html" class="card">  More Links</a><a href="404.html" class="card">Comments</a><a href="https://mortuary-decal-everyone.ngrok-free.dev/" class="card">GimBot</a></h1>
+    
+<input type="text" id="searchInput" placeholder="Search games..." style="margin-left: 20px; padding: 5px 10px; font-size: 14px; border-radius: 8px; border: none; background: #2a2a2a; color: white;">
+
+<div id="gameCount" style="font-size:14px;color:#94a3b8;margin-top:5px;">
+   Showing <span id="shownCount">5</span> / <span id="totalCount">5</span> games
+</div>
+
+
+<script>
+
+window.onload = function() {
+  const container = document.querySelector('.game-container');
+  const cards = Array.from(container.querySelectorAll('a.card'));
+  
+
+  cards.sort((a, b) => {
+    const titleA = a.querySelector('.game-title').textContent.toLowerCase();
+    const titleB = b.querySelector('.game-title').textContent.toLowerCase();
+    return titleA.localeCompare(titleB);
+  });
+  container.innerHTML = '';
+  cards.forEach(card => container.appendChild(card));
+
+
+  const input = document.getElementById('searchInput');
+  input.addEventListener('input', function() {
+    const filter = input.value.toLowerCase();
+    cards.forEach(card => {
+      const alt = card.querySelector('.game-title').textContent.toLowerCase();
+      if (alt.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+};
+</script>
+
+
+
+  </div>
+
+  
+</header>
+
+
+<main>
+  <div class="game-container">
+</div>
+
+
+  <div style="text-align:center; margin-top:30px;">
+          
+      </div>
+  
+</main>
+
+<footer>
+  <p>4games | https://discord.gg/ujMnFfP9Jr | Terms of Service and Contact https://4games.net/terms-dmca</p>
+</footer>
+<script>
+window.onload = function () {
+  confirm("Welcome to 4G*mes | Join the discord for more links: https://discord.gg/8h3Q6yYQAc");
+};
+</script>
+
+<script>
+window.onload = function() {
+  const container = document.querySelector('.game-container');
+  const cards = Array.from(container.querySelectorAll('a.card'));
+
+  
+  cards.sort((a, b) => {
+    const altA = a.querySelector('.game-title').textContent.toLowerCase();
+    const altB = b.querySelector('.game-title').textContent.toLowerCase();
+    return altA.localeCompare(altB);
+  });
+  container.innerHTML = '';
+  cards.forEach(card => container.appendChild(card));
+
+  
+  const input = document.getElementById('searchInput');
+  input.addEventListener('input', function() {
+    const filter = input.value.toLowerCase();
+    cards.forEach(card => {
+      const alt = card.querySelector('.game-title').textContent.toLowerCase();
+      if(alt.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+};
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+<script>
+window.onload = function() {
+  const container = document.querySelector('.game-container');
+  const cards = Array.from(container.querySelectorAll('a.card'));
+  const shownEl = document.getElementById('shownCount');
+  const totalEl = document.getElementById('totalCount');
+  const input = document.getElementById('searchInput');
+
+  const TOTAL = cards.length;
+  totalEl.textContent = TOTAL;
+
+  
+  function animate(el, from, to, duration = 300) {
+    const start = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      el.textContent = Math.floor(from + (to - from) * progress);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  
+  cards.sort((a, b) => {
+    const A = a.querySelector('.game-title').textContent.toLowerCase();
+    const B = b.querySelector('.game-title').textContent.toLowerCase();
+    return A.localeCompare(B);
+  });
+
+  container.innerHTML = '';
+  cards.forEach(card => container.appendChild(card));
+
+  
+  animate(shownEl, 0, TOTAL);
+
+  let currentShown = TOTAL;
+
+  
+  input.addEventListener('input', function() {
+    const filter = input.value.toLowerCase();
+    let visible = 0;
+
+    cards.forEach(card => {
+      const name = card.querySelector('.game-title').textContent.toLowerCase();
+      if (name.includes(filter)) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    animate(shownEl, currentShown, visible);
+    currentShown = visible;
+  });
+};
+</script>
+
+
+
+<style>
+
+  #fg-viewer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    flex-direction: column;
+    background: #000;
+  }
+  #fg-viewer.open { display: flex; }
+
+
+  #fg-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 46px;
+    background: #1C2526;
+    flex-shrink: 0;
+    border-bottom: 1px solid #2a3535;
+    gap: 10px;
+  }
+
+  #fg-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+  }
+
+  #fg-header-btns {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .fg-btn {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1.5px solid #2e3c3d;
+    background: transparent;
+    color: #94a3b8;
+    transition: all 0.18s;
+    white-space: nowrap;
+    outline: none;
+    user-select: none;
+  }
+  .fg-btn:focus { outline: none; }
+  .fg-btn:hover {
+    color: #fff;
+    border-color: #4a8fa8;
+    background: rgba(79,172,254,0.08);
+  }
+  .fg-btn:focus, .fg-btn:active, .fg-btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border-color: #2e3c3d;
+  }
+  .fg-btn-close {
+    color: #ff416c;
+    border-color: #3d1e24;
+    padding: 5px 11px;
+    font-size: 15px;
+  }
+  .fg-btn-close:hover {
+    background: rgba(255,65,108,0.12);
+    border-color: #ff416c;
+  }
+  .fg-btn-close:focus, .fg-btn-close:active, .fg-btn-close:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border-color: #3d1e24;
+  }
+
+
+  #fg-game-area {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+  }
+  #fg-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+
+</style>
+
+
+<div id="fg-viewer">
+  <div id="fg-header">
+    <span id="fg-title">game title (if you see this title broke)</span>
+    <div id="fg-header-btns">
+      <button class="fg-btn" onclick="fgReload()">Reload Game</button>
+      <button class="fg-btn" onclick="fgOpenProxied()">Open in New Tab</button>
+      <button class="fg-btn fg-btn-close" onclick="fgClose()">Close</button>
+    </div>
+  </div>
+  <div id="fg-game-area">
+    <iframe id="fg-iframe" src="about:blank" allowfullscreen
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-pointer-lock"></iframe>
+  </div>
+</div>
+
+<script>
+(function () {
+  let currentProxied = '';
+  let currentDirect  = '';
+
+  window.fgOpen = function(proxiedUrl, directUrl, title) {
+    currentProxied = proxiedUrl;
+    currentDirect  = directUrl;
+    document.getElementById('fg-title').textContent = title || 'Game';
+    document.getElementById('fg-iframe').src = proxiedUrl;
+    document.getElementById('fg-viewer').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.fgClose = function() {
+    document.getElementById('fg-viewer').classList.remove('open');
+    document.getElementById('fg-iframe').src = 'about:blank';
+    document.body.style.overflow = '';
+  };
+
+  window.fgReload = function() {
+    document.getElementById('fg-iframe').src = currentProxied;
+  };
+
+  window.fgOpenProxied = function() {
+    if (currentProxied) window.open(currentProxied, '_blank');
+  };
+
+  window.fgOpenDirect = function() {
+    if (currentDirect) window.open(currentDirect, '_blank');
+  };
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('fg-viewer').classList.contains('open')) fgClose();
+  });
+
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+
+    if (href.startsWith('http')) {
+      e.preventDefault();
+
+      let title = 'Game';
+      const card = link.closest('.card');
+      if (card) {
+        const gt = card.querySelector('.game-title');
+        if (gt) title = gt.textContent.trim();
+      }
+
+      fgOpen(href, href, title);
+      return;
+    }
+
+    // Local /games/ links — open directly in viewer
+    if (href.startsWith('/games/')) {
+      e.preventDefault();
+
+      let title = 'Game';
+      const card = link.closest('.card');
+      if (card) {
+        const gt = card.querySelector('.game-title');
+        if (gt) title = gt.textContent.trim();
+      }
+
+      fgOpen(href, href, title);
+    }
+  });
+})();
+</script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4Games jsdel </title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+  }
+
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+</style>
+
+
+
+<script>
+(function() {
+  var container = document.querySelector('.game-container');
+  var shownEl = document.getElementById('shownCount');
+  var totalEl = document.getElementById('totalCount');
+  var input = document.getElementById('searchInput');
+  var allCards = [];
+  var currentShown = 0;
+
+  fetch('/games/list')
+    .then(function(r) { return r.json(); })
+    .then(function(games) {
+      games.sort(function(a, b) { return a.title.localeCompare(b.title); });
+
+      games.forEach(function(game) {
+        var a = document.createElement('a');
+        a.href = game.url;
+        a.className = 'card';
+        a.style = '';
+        a.innerHTML = '<span class="game-title">' + game.title + '</span>';
+        container.appendChild(a);
+        allCards.push(a);
+      });
+
+      var total = allCards.length;
+      totalEl.textContent = total;
+      shownEl.textContent = total;
+      currentShown = total;
+
+      input.addEventListener('input', function() {
+        var filter = input.value.toLowerCase();
+        var visible = 0;
+        allCards.forEach(function(card) {
+          var name = card.querySelector('.game-title').textContent.toLowerCase();
+          if (name.includes(filter)) { card.style.display = ''; visible++; }
+          else { card.style.display = 'none'; }
+        });
+        shownEl.textContent = visible;
+        currentShown = visible;
+      });
+    })
+    .catch(function(err) {
+      console.error('Failed to load game list:', err);
+      container.innerHTML = '<p style="color:#ff416c;text-align:center;grid-column:1/-1;">Could not load games. Is the server running?</p>';
+    });
+})();
+</script>
+</body></html>
